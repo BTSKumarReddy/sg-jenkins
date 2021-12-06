@@ -23,4 +23,9 @@ public class DemoController {
     {
         return ResponseEntity.ok("hello "+message);
     }
+     @GetMapping("/message")
+    public ResponseEntity<?> getMessage()
+    {
+        return ResponseEntity.ok("hello");
+    }
 }
